@@ -6,7 +6,7 @@ function HelperFunctions() {
 
 	//event handler for the clear button event. Clears the screen
 	select("#clearButton").mouseClicked(function() {
-		//???
+		//reset the colour to white.
         background(255, 255, 255);
 
 		//call loadPixels to update the drawing state
@@ -17,7 +17,7 @@ function HelperFunctions() {
 	//event handler for the save image button. saves the canvsa to the
 	//local file system.
 	select("#saveImageButton").mouseClicked(function() {
-		//???
+		//the user's drawing is saved to the hard disk as a jpg file.
         saveCanvas('myCanvas', 'jpg');
 	});
 }
